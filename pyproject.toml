@@ -1,0 +1,23 @@
+[project]
+name = "langchaingraphsmith"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "wali-veer", email = "wali.veer@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "black>=26.10.0",
+    "isort>=9.0.2",
+    "langchain>=1.4.3",
+    "langchain-openai>=1.7.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langchaingraphsmith = "langchaingraphsmith:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
